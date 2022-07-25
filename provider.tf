@@ -4,13 +4,13 @@ terraform {
       source = "hashicorp/aws"
     }
   }
-  backend "s3" {
-    encrypt        = false
-    bucket         = "tf-bucket-s3"
-    dynamodb_table = "tf-state-lock-dynamo"
-    key            = "terraform-tfstate"
-    region         = "ap-south-1"
-  }
+#  backend "s3" {
+#    encrypt        = false
+#    bucket         = "tf-bucket-s3"
+#    dynamodb_table = "tf-state-lock-dynamo"
+#    key            = "terraform-tfstate"
+#    region         = "ap-south-1"
+#  }
 }
 
 variable "aws_region" {
