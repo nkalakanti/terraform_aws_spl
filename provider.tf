@@ -6,10 +6,10 @@ terraform {
   }
   backend "s3" {
     encrypt        = false
-    bucket         = "tf-bucket-s3"
-    dynamodb_table = "tf-state-lock-dynamo"
+    bucket         = "cloudbees-aws-terraform"
+    dynamodb_table = "n3_dynamodb"
     key            = "terraform-tfstate"
-    region         = "ap-south-1"
+    region         = "eu-west-1"
   }
 }
 
